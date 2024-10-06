@@ -60,8 +60,35 @@
   position: relative;
   width: 100%;
 }
+.pricing-card-div {
+  align-items: flex-start;
+  border-radius: 20px;
+  box-shadow: 0 0.7961918735236395px 2.3885756205709185px -0.625px #0000000d,
+    0 2.414506143104518px 7.2435184293135535px -1.25px #0000000d,
+    0 6.382653521484461px 19.147960564453385px -1.875px #0000000d,
+    0 20px 60px -2.5px #0000000d;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 30px;
+  position: relative;
+  width: 320px;
+  border-bottom-width: 2px;
+  border-color: var(--token-08250336-7ddd-4922-9cb9-81197485932e, #fafafa);
+  border-left-width: 2px;
+  border-right-width: 2px;
+  border-style: solid;
+  border-top-width: 2px;
+  /* padding: 40px 32px; */
+  background-color: var(--token-9c2f9650-7ca3-46db-8137-b7111f91eba2, #0a0a0a);
+  box-shadow: 0 4px #0a0a0a;
+}
 .cards {
-  align-items: center;
   display: flex;
   flex: none;
   flex-direction: row;
@@ -69,45 +96,21 @@
   gap: 16px;
   height: min-content;
   justify-content: center;
+  align-items: center;
+
   max-width: 800px;
   overflow: visible;
   padding: 0;
   position: relative;
   width: 100%;
 }
-.left-card {
-  border-bottom-width: 2px;
-  border-color: var(--token-08250336-7ddd-4922-9cb9-81197485932e, #fafafa);
-  border-left-width: 2px;
-  border-right-width: 2px;
-  border-style: solid;
-  border-top-width: 2px;
-  align-content: flex-start;
-  align-items: flex-start;
-  align-self: stretch;
-  background-color: var(--token-9c2f9650-7ca3-46db-8137-b7111f91eba2, #0a0a0a);
-  border-radius: 20px;
-  box-shadow: 0 4px #0a0a0a;
-  display: flex;
-  flex: 1 0 0px;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  gap: 24px;
-  height: auto;
-  justify-content: flex-start;
-  min-width: 390px;
-  /* overflow: hidden; */
-  padding: 40px 32px;
-  position: relative;
-  width: 100%;
-}
 .top-section {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   flex: none;
   flex-direction: column;
   flex-wrap: nowrap;
-  gap: 24px;
+  gap: 12px;
   height: min-content;
   justify-content: center;
   overflow: visible;
@@ -131,7 +134,7 @@
 }
 .para-start-div {
   align-items: center;
-  background-color: #0a0a0a;
+  /* background-color: #0a0a0a; */
   border-radius: 28px;
   display: flex;
   flex: none;
@@ -143,17 +146,15 @@
   overflow: hidden;
   padding: 4px 12px;
   position: relative;
-  white-space: pre;
-  width: min-content;
+  /* white-space: pre; */
+  width: 100%;
 }
 
 .para-start {
   font-family: "Manrope", "Manrope Placeholder", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.01em;
-  line-height: 20px;
-  color: white;
+  font-size: 16px;
+  text-align: left;
+  color: rgb(102, 102, 102);
 }
 
 .price-container {
@@ -173,8 +174,8 @@
 
 .price {
   font-family: "Manrope", "Manrope Placeholder", sans-serif;
-  font-size: 40px;
-  font-weight: 800;
+  font-size: 50px;
+  font-weight: 600;
   letter-spacing: -0.04em;
   line-height: 48px;
   color: rgb(10, 10, 10);
@@ -288,10 +289,10 @@
   height: min-content;
   justify-content: center;
   overflow: hidden;
-  padding: 12px 32px;
+  padding: 10px 20px;
   position: relative;
   text-decoration: none;
-  width: 100%;
+  /* width: 100%; */
   transition: transform 0.3s ease-in;
 }
 .btn-anchor:hover {
@@ -338,7 +339,6 @@
   flex: none;
   flex-direction: column;
   flex-wrap: nowrap;
-  gap: 8px;
   height: min-content;
   justify-content: flex-start;
   overflow: visible;
@@ -368,23 +368,39 @@
 .point-text {
   font-family: "Manrope", "Manrope Placeholder", sans-serif;
   font-weight: 500;
+  /* overflow-wrap: break-word; */
+  /* word-wrap: break-word; */
   line-height: 24px;
   color: rgb(10, 10, 10);
+}
+.flex-row-div {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 810px) and (max-width: 1199px) {
   .pricing {
     padding: 64px 32px;
   }
-
+  .flex-row-div {
+    flex-direction: row;
+  }
   .cards {
     flex-direction: column;
+  }
+  .right-card-divvv {
+    width: 70%;
   }
 }
 
 @media (max-width: 809px) {
   .pricing {
     padding: 72px 16px;
+  }
+  .flex-row-div {
+    flex-direction: column;
   }
   .start-book-container {
     flex-direction: column;
@@ -397,6 +413,9 @@
     height: min-content;
     min-width: unset;
     width: 100%;
+  }
+  .right-card-divvv {
+    width: 350px;
   }
   .cards {
     flex-direction: column;

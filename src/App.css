@@ -200,7 +200,7 @@
 
 .logos-container {
   flex: none;
-  height: 32px;
+  height: 65px;
   position: relative;
   width: 100%;
 }
@@ -224,12 +224,14 @@
     rgba(0, 0, 0, 0) 100%
   );
   overflow: hidden;
+  background-color: #fff;
+  height: 300px;
 }
 
 .ul {
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 100px;
   max-width: 100%;
   max-height: 100%;
   place-items: center;
@@ -250,7 +252,7 @@
   flex-direction: column;
   flex-wrap: nowrap;
   gap: 10px;
-  height: 32px;
+  height: 28px;
   justify-content: center;
   overflow: hidden;
   padding: 0;
@@ -260,7 +262,7 @@
 
 .li-y-combinator {
   flex: none;
-  height: 28px;
+  height: 40px;
   overflow: visible;
   position: relative;
   width: 136px;
@@ -294,9 +296,43 @@
   height: min-content;
   justify-content: flex-start;
   overflow: visible;
-  padding: 72px 72px 80px;
+  padding: 10px 72px 80px;
   position: relative;
   width: 100%;
+}
+/* Outer container */
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Inner slider */
+.slider {
+  display: flex;
+  width: max-content;
+  animation: infinite-reverse-scroll 10s ease-in-out infinite alternate; /* Uses alternate to reverse */
+}
+
+/* Individual slides */
+.slide {
+  min-width: 100px; /* Adjust based on image size */
+  flex: 0 0 auto;
+}
+
+/* Images inside the slides */
+.slide img {
+  width: 100%; /* Ensure the image takes up the full space of the div */
+}
+
+/* Keyframes for infinite forward and reverse scroll */
+@keyframes infinite-reverse-scroll {
+  0% {
+    transform: translateX(0); /* Start from the first image */
+  }
+  100% {
+    transform: translateX(-100%); /* Move to the last image */
+  }
 }
 
 .problem-container {
@@ -310,7 +346,7 @@
   justify-content: flex-start;
   max-width: 1200px;
   overflow: visible;
-  padding: 0 72px;
+  /* padding: 0 72px; */
   position: relative;
   width: 100%;
 }
@@ -355,7 +391,7 @@
   flex: none;
   flex-direction: row;
   flex-wrap: nowrap;
-  /* gap: 16px; */
+  gap: 16px;
   height: min-content;
   justify-content: center;
   max-width: 1200px;
@@ -496,6 +532,35 @@
   transform: scale(1.1);
   cursor: pointer;
 }
+
+.card-container {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards per row initially */
+}
+.card-div {
+  background-color: black;
+  padding: 20px 40px;
+  margin-bottom: 12px;
+}
+@media (max-width: 1200px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  }
+}
+
+@media (max-width: 900px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  }
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    grid-template-columns: repeat(1, 1fr); /* 1 card per row */
+  }
+}
 @media (min-width: 810px) and (max-width: 1199px) {
   .problem-ques {
     flex-direction: column;
@@ -569,7 +634,7 @@
   }
   .s-section,
   .problem-section {
-    padding: 72px 16px;
+    padding: 0px 16px;
   }
 }
 

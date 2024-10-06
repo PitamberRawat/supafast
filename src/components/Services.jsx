@@ -7,6 +7,19 @@ import "swiper/css/navigation";
 import BrandContainer from "./BrandContainer";
 import Brand from "./Brand";
 
+import Browser from "../assets/imgfold2/Browser.jpg";
+import Deel from "../assets/imgfold2/Deel.jpg";
+import Jobber from "../assets/imgfold2/Jobber.jpg";
+import Kuku from "../assets/imgfold2/Kuku.jpg";
+import LightSpeed from "../assets/imgfold2/LightSpeed.jpg";
+import Neo from "../assets/imgfold2/Neo.jpg";
+import Postman from "../assets/imgfold2/Postman.jpg";
+import SnapDocs from "../assets/imgfold2/SnapDocs.jpg";
+import Tata from "../assets/imgfold2/Tata.jpg";
+import TDF from "../assets/imgfold2/TDF.jpg";
+import TElus from "../assets/imgfold2/TElus.jpg";
+import TrueCaller from "../assets/imgfold2/TrueCaller.jpg";
+
 const Services = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -104,10 +117,9 @@ const Services = () => {
                   objectPosition: "center center",
                   margin: "10px",
                 }}
-                src="https://framerusercontent.com/images/lA8qW9YBzUvrRQbNlaeTRIg.png?scale-down-to=512"
+                src={Browser}
                 alt=""
               />
-              <p className="slide-name">AI Powered Legal Tech</p>
             </SwiperSlide>
             <SwiperSlide>
               <img
@@ -118,10 +130,9 @@ const Services = () => {
                   objectPosition: "center center",
                   margin: "10px",
                 }}
-                src="https://framerusercontent.com/images/hPwTqceqqbBQAHYfhbJnVQlAY.png?scale-down-to=1024"
+                src={Deel}
                 alt=""
               />
-              <p className="slide-name">Web Development Agency</p>
             </SwiperSlide>
             <SwiperSlide>
               <img
@@ -132,12 +143,9 @@ const Services = () => {
                   objectPosition: "center center",
                   margin: "10px",
                 }}
-                src="https://framerusercontent.com/images/XGeDIvo1lb8buwXeAlSuDF0yXM0.png?scale-down-to=512"
+                src={Jobber}
                 alt=""
               />
-              <p className="slide-name">
-                Sales and Marketing Operations Agency
-              </p>
             </SwiperSlide>
             <SwiperSlide>
               <img
@@ -148,10 +156,9 @@ const Services = () => {
                   objectPosition: "center center",
                   margin: "10px",
                 }}
-                src="https://framerusercontent.com/images/ghxkdrtVlTYVs5TqQVRUufskSE.png?scale-down-to=1024"
+                src={Kuku}
                 alt=""
               />
-              <p className="slide-name">AI/RegTech</p>
             </SwiperSlide>
             <SwiperSlide>
               <img
@@ -162,76 +169,102 @@ const Services = () => {
                   objectPosition: "center center",
                   margin: "10px",
                 }}
-                src="https://framerusercontent.com/images/JDE1ryWpqIJmSRL6axN9hZtUb0g.png?scale-down-to=1024"
+                src={LightSpeed}
                 alt=""
               />
-              <p className="slide-name">No-Code HealthTech Platform</p>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  objectPosition: "center center",
+                  margin: "10px",
+                }}
+                src={Neo}
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  objectPosition: "center center",
+                  margin: "10px",
+                }}
+                src={Postman}
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  objectPosition: "center center",
+                  margin: "10px",
+                }}
+                src={SnapDocs}
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  objectPosition: "center center",
+                  margin: "10px",
+                }}
+                src={Tata}
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  objectPosition: "center center",
+                  margin: "10px",
+                }}
+                src={TDF}
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  objectPosition: "center center",
+                  margin: "10px",
+                }}
+                src={TElus}
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  objectPosition: "center center",
+                  margin: "10px",
+                }}
+                src={TrueCaller}
+                alt=""
+              />
             </SwiperSlide>
           </Swiper>
-        </div>
-
-        <div className="tools">
-          <div className="tools-container">
-            <p className="tool-text">Tools</p>
-          </div>
-        </div>
-
-        <div className="logos-container">
-          <div className="section">
-            <ul className="ul">
-              <li>
-                <div className="li-container">
-                  <div className="li-y-combinator">
-                    <Brand imgUrl="https://framerusercontent.com/images/VeMjxejNWALiBEm37FVdzAxOhKA.png" />
-                  </div>
-                </div>
-              </li>
-
-              <BrandContainer
-                width="px"
-                ar="0.84375 "
-                imgUrl="https://framerusercontent.com/images/sovZmD4SJsQadVKuem8MZgtex1w.png"
-              />
-
-              <BrandContainer
-                width="70px"
-                imgUrl="https://framerusercontent.com/images/rhOGDNL6iI5dwjVhBTnsag10QI.png"
-              />
-
-              <BrandContainer
-                width="87px"
-                imgUrl="https://framerusercontent.com/images/0SUSmn1QUW09w6woJhZNkIHW30.png"
-              />
-
-              <BrandContainer
-                width="80px"
-                imgUrl="https://framerusercontent.com/images/BouC8pyBpkmyq0L70ebleMqNp8.png"
-              />
-
-              <BrandContainer
-                width="153px"
-                imgUrl="https://framerusercontent.com/images/Jo9QzSoOBGVX9KrhGgexLa6B0g.png"
-              />
-
-              <BrandContainer
-                width="95px"
-                imgUrl="https://framerusercontent.com/images/REjn1hgs7MxTYoFK09R7FfnPI.png"
-              />
-
-              <BrandContainer
-                width="131px"
-                imgUrl="https://framerusercontent.com/images/GUG9D2BDs90m0XvyQIw1ucznzSQ.png"
-              />
-
-              <li>
-                <div className="li-container">
-                  <div className="li-y-combinator">
-                    <Brand imgUrl="https://framerusercontent.com/images/d0QAgZeotmF1qrFYP6qzZEU9tuw.png" />
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
     </>

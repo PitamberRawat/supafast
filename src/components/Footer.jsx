@@ -119,41 +119,29 @@ const Footer = () => {
       </div>
       <div className="sticky-navbar">
         <div className="nav-container">
-          <div className="logo">
-            <div className="logo-container">
-              <div
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  aspectRatio: "inherit",
-                }}
-              >
-                <svg
-                  viewBox="0 0 34 28"
-                  preserveAspectRatio="none"
-                  width="100%"
-                  height="100%"
-                >
-                  <use href="#svg-73944727_606"></use>
-                </svg>
-              </div>
-            </div>
-          </div>
+          <img
+            style={{
+              height: "60px",
+              width: "90px",
+            }}
+            src="https://framerusercontent.com/images/gAKACEGDrWnhhE9OEb1ppLbSqc.png"
+            alt=""
+          />
 
           <div className="links">
-            <a href="" className="link">
+            <a href="#how" className="link">
               How it Works
             </a>
 
-            <a href="" className="link">
+            <a href="#pricing" className="link">
               Pricing
             </a>
 
-            <a href="" className="link">
+            <a href="#work" className="link">
               Work
             </a>
 
-            <a href="" className="link">
+            <a href="#faq" className="link">
               FAQ
             </a>
           </div>

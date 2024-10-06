@@ -2,6 +2,7 @@
   align-items: center;
   background-color: var(--token-08250336-7ddd-4922-9cb9-81197485932e, #fafafa);
   display: flex;
+  /* background-color: #fff; */
   flex: none;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -22,14 +23,14 @@
   border-top-width: 2px;
   align-content: center;
   align-items: center;
-  background-color: rgb(10, 10, 10);
+  /* background-color: rgb(10, 10, 10); */
   border-radius: 20px;
   box-shadow: 0 4px #f9f9f9;
   display: flex;
   flex: none;
   flex-direction: column;
   flex-wrap: nowrap;
-  gap: 64px;
+  gap: 34px;
   height: min-content;
   justify-content: flex-start;
   max-width: 1200px;

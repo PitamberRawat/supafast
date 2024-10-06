@@ -4,7 +4,7 @@
   flex-direction: column;
   flex-wrap: nowrap;
   gap: 10px;
-  height: 32px;
+  height: 320px;
   justify-content: center;
   overflow: hidden;
   padding: 0;
@@ -15,7 +15,7 @@
 .brand-container {
   /* aspect-ratio: ; */
   flex: none;
-  height: 32px;
+  height: 40px;
   overflow: visible;
   position: relative;
 }

@@ -2,7 +2,7 @@ import React from "react";
 import "./Pricing.css";
 const Pricing = () => {
   return (
-    <div className="pricing">
+    <div className="pricing" id="pricing">
       <div className="pricing-container">
         <div className="img-container">
           <div
@@ -35,30 +35,162 @@ const Pricing = () => {
         </div>
         <div className="header-Psection ">
           <h3 className="problem-text" style={{ color: "black" }}>
-            Ready to Supafast
+            Ready to Land
           </h3>
           <h3
             className="problem-text"
             style={{ marginTop: "-20px", color: "black" }}
           >
-            your Conversions?
+            your next role?
           </h3>
         </div>
 
-        <div className="card-container">
+        <div className="cards-container">
           <div className="cards">
-            <div className="left-card">
+            {/* LEFT CARD */}
+            <div className="flex-row-div">
+              <div className="left-card pricing-card-div">
+                <div className="top-section">
+                  <div className="start-book-container">
+                    <div className="para-start-div">
+                      <p className="para-start">Try us!</p>
+                    </div>
+                  </div>
+
+                  <div className="price-container">
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "flex-start",
+                        flexShrink: "0",
+                      }}
+                    >
+                      <p className="price">$2</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="feature-section">
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "flex-start",
+                      flexShrink: "0",
+                    }}
+                  >
+                    <p className="feature-text">Features:</p>
+                  </div>
+
+                  <div className="feature-points-div">
+                    <Pointdiv point="5 Credits" />
+                    <Pointdiv point="Get Top 2 Matches per search" />
+                    <Pointdiv point="Look For Upto 5 Jobs" />
+                    <Pointdiv point="Delivery Time: 15 Mins" />
+                  </div>
+                </div>
+                <a
+                  href="https://cal.com/namya/15min?date=2024-09-11&month=2024-09"
+                  className="btn-anchor"
+                >
+                  <p className="btn-secure-para">Get Started </p>
+                  <span className="arrow-right">→</span>
+                </a>
+              </div>
+
+              {/*  Middle card */}
+
+              <div
+                className="left-card pricing-card-div"
+                style={{ backgroundColor: "black" }}
+              >
+                <div className="top-section">
+                  <div className="start-book-container">
+                    <div className="para-start-div">
+                      <p className="para-start" style={{ color: "white" }}>
+                        Enough credits to get your dream job!
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="price-container">
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "flex-start",
+                        flexShrink: "0",
+                      }}
+                    >
+                      <p className="price" style={{ color: "white" }}>
+                        $10{" "}
+                        <span
+                          style={{
+                            fontSize: "16px",
+                            fontWeight: "normal",
+                            letterSpacing: "normal",
+                          }}
+                        >
+                          p/month
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="feature-section">
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "flex-start",
+                      flexShrink: "0",
+                    }}
+                  >
+                    <p style={{ color: "white" }} className="feature-text">
+                      Features:
+                    </p>
+                  </div>
+
+                  <div className="feature-points-div">
+                    <Pointdiv flag={true} point="100 Credits" />
+                    <Pointdiv
+                      flag={true}
+                      point="Get Top 5 Matches per search"
+                    />
+                    <Pointdiv flag={true} point="Look For Upto 100 Jobs" />
+                    <Pointdiv flag={true} point="Delivery Time: 10 Mins" />
+                    <Pointdiv
+                      flag={true}
+                      point="Upto 10 AI Email Copy: Coming Soon"
+                    />
+                  </div>
+                </div>
+                <a
+                  href="https://cal.com/namya/15min?date=2024-09-11&month=2024-09"
+                  className="btn-anchor"
+                  style={{ backgroundColor: "white" }}
+                >
+                  <p className="btn-secure-para" style={{ color: "black" }}>
+                    Get Started{" "}
+                  </p>
+                  <span className="arrow-right" style={{ color: "black" }}>
+                    →
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            {/* RIGHT CARD  */}
+
+            <div className="left-card pricing-card-div right-card-divvv">
               <div className="top-section">
                 <div className="start-book-container">
                   <div className="para-start-div">
-                    <p className="para-start">Starting at</p>
-                  </div>
-                  <div
-                    className="para-start-div"
-                    style={{ backgroundColor: "#ffe0e0" }}
-                  >
-                    <p className="para-start" style={{ color: "red" }}>
-                      New Booking for October
+                    <p className="para-start">
+                      Never worry about unread resumes again. Reach hiring
+                      managers forever!
                     </p>
                   </div>
                 </div>
@@ -72,99 +204,9 @@ const Pricing = () => {
                       flexShrink: "0",
                     }}
                   >
-                    <p className="price">$2497</p>
-                  </div>
-
-                  <div
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      justifyContent: "flex-start",
-                      flexShrink: "0",
-                    }}
-                  >
-                    <p className="price-para-1">
-                      Launch your dream site in days, not months.
-                    </p>
-                  </div>
-                  <div
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      justifyContent: "flex-start",
-                      flexShrink: "0",
-                    }}
-                  >
-                    <p className="price-para-2">
-                      Perfect for single, high-impact, conversion-focused
-                      landing page.
-                    </p>
+                    <p className="price">$49</p>
                   </div>
                 </div>
-
-                <div className="review-container">
-                  <div className="img-review-div-container">
-                    <div className="img-review-div">
-                      <div
-                        style={{
-                          position: "absolute",
-                          borderRadius: "inherit",
-                          inset: "0",
-                        }}
-                      >
-                        <img
-                          style={{
-                            height: "100%",
-                            width: "100%",
-                            objectFit: "cover",
-                            display: "block",
-                            objectPosition: "center center",
-                          }}
-                          src="https://framerusercontent.com/images/RrJRAFZWpfhPTJkIEYdGn8G8ZTo.png"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                    <div></div>
-
-                    <div className="founder-div">
-                      <div className="outer-cofounder-div">
-                        <div
-                          style={{
-                            display: "flex",
-                            flexDirection: "column",
-                            justifyContent: "flex-start",
-                            flexShrink: "0",
-                          }}
-                        >
-                          <p className="cofounder-name">Chyrs Bader</p>
-                        </div>
-
-                        <div
-                          style={{
-                            display: "flex",
-                            flexDirection: "column",
-                            justifyContent: "flex-start",
-                            flexShrink: "0",
-                          }}
-                        >
-                          <p className="cofounder-name">CEO at Rosebud</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <p className="excellent-p">
-                    Excellent, patient, professional, quick.
-                  </p>
-                </div>
-
-                <a
-                  href="https://cal.com/namya/15min?date=2024-09-11&month=2024-09"
-                  className="btn-anchor"
-                >
-                  <p className="btn-secure-para">Secure your Oct Spot </p>
-                  <span className="arrow-right">→</span>
-                </a>
               </div>
 
               <div className="feature-section">
@@ -180,184 +222,21 @@ const Pricing = () => {
                 </div>
 
                 <div className="feature-points-div">
-                  <Pointdiv point="Copywriting" />
-                  <Pointdiv point="4 Hero iterations" />
-                  <Pointdiv point="Kick-off strategy call" />
-                  <Pointdiv point="Reusable components" />
-                  <Pointdiv point="Updates every 48 hours" />
-                  <Pointdiv point="Mobile, Tablet & Desktop layouts" />
+                  <Pointdiv point="50 Credits Every Day" />
+                  <Pointdiv point="Get Top 7 Matches" />
+                  <Pointdiv point="Look For Unlimited Jobs" />
+                  <Pointdiv point="Delivery Time: 5 Mins" />
+                  <Pointdiv point="LifeTime Support & Updates" />
+                  <Pointdiv point="Unlimited AI Email Copy: Coming Soon" />
                 </div>
               </div>
-            </div>
-            <div className="left-card" style={{ backgroundColor: "black" }}>
-              <div className="top-section">
-                <div className="start-book-container">
-                  <div
-                    className="para-start-div"
-                    style={{
-                      backgroundColor: "#221f1f",
-                    }}
-                  >
-                    <p className="para-start">Retainer</p>
-                  </div>
-                  <div
-                    className="para-start-div"
-                    style={{ backgroundColor: "#ffe0e0" }}
-                  >
-                    <p className="para-start" style={{ color: "red" }}>
-                      New Booking for October
-                    </p>
-                  </div>
-                </div>
-
-                <div className="price-container">
-                  <div
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      justifyContent: "flex-start",
-                      flexShrink: "0",
-                    }}
-                  >
-                    <p className="price" style={{ color: "white" }}>
-                      $4497/mo
-                    </p>
-                  </div>
-
-                  <div
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      justifyContent: "flex-start",
-                      flexShrink: "0",
-                    }}
-                  >
-                    <p className="price-para-1">Pause / Cancel anytime</p>
-                  </div>
-                  <div
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      justifyContent: "flex-start",
-                      flexShrink: "0",
-                    }}
-                  >
-                    <p className="price-para-2" style={{ color: "white" }}>
-                      Ideal for those who need an ongoing design support.
-                    </p>
-                  </div>
-                </div>
-
-                <div
-                  className="review-container"
-                  style={{ backgroundColor: "black", borderColor: "#d8d4d4" }}
-                >
-                  <div className="img-review-div-container">
-                    <div className="img-review-div">
-                      <div
-                        style={{
-                          position: "absolute",
-                          borderRadius: "inherit",
-                          inset: "0",
-                        }}
-                      >
-                        <img
-                          style={{
-                            height: "100%",
-                            width: "100%",
-                            objectFit: "cover",
-                            display: "block",
-                            objectPosition: "center center",
-                          }}
-                          src="https://framerusercontent.com/images/QmGdU5RCkq1q6p57ONYMNx5A.png"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                    <div></div>
-
-                    <div className="founder-div">
-                      <div className="outer-cofounder-div">
-                        <div
-                          style={{
-                            display: "flex",
-                            flexDirection: "column",
-                            justifyContent: "flex-start",
-                            flexShrink: "0",
-                          }}
-                        >
-                          <p
-                            style={{ color: "white" }}
-                            className="cofounder-name"
-                          >
-                            Harsh Patel
-                          </p>
-                        </div>
-
-                        <div
-                          style={{
-                            display: "flex",
-                            flexDirection: "column",
-                            justifyContent: "flex-start",
-                            flexShrink: "0",
-                          }}
-                        >
-                          <p
-                            style={{ color: "white" }}
-                            className="cofounder-name"
-                          >
-                            Founder at Macro
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <p style={{ color: "white" }} className="excellent-p">
-                    Phenomenal, fast, great designs.
-                  </p>
-                </div>
-
-                <a
-                  href="https://cal.com/namya/15min?date=2024-09-11&month=2024-09"
-                  className="btn-anchor"
-                  style={{ backgroundColor: "white" }}
-                >
-                  <p className="btn-secure-para" style={{ color: "black" }}>
-                    Secure your Oct Spot{" "}
-                  </p>
-                  <span className="arrow-right" style={{ color: "black" }}>
-                    →
-                  </span>
-                </a>
-              </div>
-
-              <div className="feature-section">
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "flex-start",
-                    flexShrink: "0",
-                  }}
-                >
-                  <p style={{ color: "white" }} className="feature-text">
-                    Features:
-                  </p>
-                </div>
-
-                <div className="feature-points-div">
-                  <Pointdiv flag="true" point="Full service" />
-                  <Pointdiv flag={true} point="Full team access" />
-                  <Pointdiv flag={true} point="Updates every 48 hours" />
-                  <Pointdiv flag={true} point="Weekly progress meetings" />
-                  <Pointdiv flag={true} point="Expert project management" />
-                  <Pointdiv
-                    flag={true}
-                    point="Async + Slack + Loom + Meetings"
-                  />
-                  <Pointdiv flag={true} point="60 hours work per month" />
-                </div>
-              </div>
+              <a
+                href="https://cal.com/namya/15min?date=2024-09-11&month=2024-09"
+                className="btn-anchor"
+              >
+                <p className="btn-secure-para">Get Started </p>
+                <span className="arrow-right">→</span>
+              </a>
             </div>
           </div>
         </div>
@@ -379,7 +258,6 @@ export const Pointdiv = ({ point, flag }) => {
           display: "flex",
           flexDirection: "column",
           justifyContent: "flex-start",
-          flexShrink: "0",
         }}
       >
         <p className="point-text" style={{ color: flag ? "white" : "black" }}>

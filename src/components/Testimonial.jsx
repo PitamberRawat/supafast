@@ -9,9 +9,7 @@ const Testimonial = () => {
         <div className="testi-text-container">
           <p>Testimonials</p>
         </div>
-        <h1 className="testi-big-text">
-          Don't take our word for it. Listen to our partners.
-        </h1>
+        <h1 className="testi-big-text">Loved by job seekers worldwide</h1>
       </div>
 
       <div className="images-section">

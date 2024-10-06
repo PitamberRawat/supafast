@@ -12,7 +12,12 @@ const Star = () => {
       strokeLinejoin="round"
       strokeLinecap="round"
       vectorEffect="non-scaling-stroke"
-      style={{ width: "16px", height: "16px" }}
+      style={{
+        width: "16px",
+        height: "16px",
+        marginLeft: "2px",
+        marginRight: "2px",
+      }}
     >
       <path
         fill="#fbbf24"

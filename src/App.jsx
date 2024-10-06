@@ -13,7 +13,111 @@ import Slider from "./components/Slider";
 
 import Star from "./components/Star";
 import Testimonial from "./components/Testimonial";
+
+import arrowdown from "../src/assets/arrowdown.png";
+import amd from "../src/assets/logos/amd.png";
+import amazon from "../src/assets/logos/amazon.png";
+import boss from "../src/assets/logos/boss.png";
+import docsend from "../src/assets/logos/docsend.png";
+import databricks from "../src/assets/logos/databricks.png";
+import deel from "../src/assets/logos/deel.png";
+import flair from "../src/assets/logos/flair.png";
+import google from "../src/assets/logos/google.png";
+import jobber from "../src/assets/logos/jobber.png";
+import kuku from "../src/assets/logos/kuku.png";
+import lightspeed from "../src/assets/logos/lightspeed.svg";
+import Lululemon from "../src/assets/logos/Lululemon.png";
+import mongodb from "../src/assets/logos/mongodb.png";
+import McKinsey from "../src/assets/logos/McKinsey.png";
+import microsoft from "../src/assets/logos/microsoft.webp";
+import neo from "../src/assets/logos/neo.png";
+import questionpro from "../src/assets/logos/questionpro.png";
+import rainforest from "../src/assets/logos/rainforest.svg";
+import Tata from "../src/assets/logos/Tata.png";
+import td from "../src/assets/logos/td.png";
+import touch from "../src/assets/logos/touch.png";
+import telus from "../src/assets/logos/telus.png";
+import tripadvisor from "../src/assets/logos/tripadvisor.svg";
+import truecaller from "../src/assets/logos/truecaller.png";
+import workday from "../src/assets/logos/workday.jpg";
+import Card from "./components/Card";
+
+const review = [
+  {
+    id: 1,
+    username: "Daniël",
+    discription:
+      "This has been a game changer. I can be the top candidate in any job now by simply sending an email!",
+  },
+  {
+    id: 2,
+    username: "Dann",
+    discription:
+      "I started using this a few weeks ago and went from no interviews to 5! By simply emailing the right person, you get so far ahead. Even when the match is not perfect because lets be honest, not everyone is on the internet, the secondary matches more than make up for it!",
+  },
+  {
+    id: 3,
+    username: "Manoj",
+    discription:
+      "Gotta use it to know it. If you are confident about your work experience, this going to work wonders!",
+  },
+  {
+    id: 4,
+    username: "Mani",
+    discription:
+      "Job applications are a daunting process. Especially in tech where you get 1000s of applications for a single role within a day! Emailing the person responsible for hiring is a sure shot way to stand out! Do it and see the change!",
+  },
+  {
+    id: 5,
+    username: "Davo",
+    discription:
+      "Damn why didn't I find out about this before. I've wasted soo much time its uncanny. ",
+  },
+  {
+    id: 6,
+    username: "Fekry",
+    discription:
+      "Bought the lifetime version because this pricing isn't going to last lol. This product is gold and I cant recommend it enough. ",
+  },
+  {
+    id: 7,
+    username: "Lauren",
+    discription:
+      "I got to know that my future boss is a Messi fan through his LinkedIn and I shot him an email striking that chord! My god it worked amazingly. My final round is scheduled for next week!",
+  },
+  {
+    id: 8,
+    username: "Parker",
+    discription:
+      "It saves me so much time and money I can't tell you. Just the ability to find out who is hiring gives me such an edge when going into an interview. ",
+  },
+  {
+    id: 9,
+    username: "Miguel",
+    discription:
+      "If you haven't found success yet, you will sure with the help of this tool. I fully recommend it. Just started my job last week!",
+  },
+];
+
 const App = () => {
+  const svg = (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="rgb(102, 102, 255)"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      style="width: 100%; height: 100%;"
+    >
+      <circle cx="12" cy="12" r="10"></circle>
+      <line x1="15" y1="9" x2="9" y2="15"></line>
+      <line x1="9" y1="9" x2="15" y2="15"></line>
+    </svg>
+  );
   return (
     <>
       <div className="container">
@@ -92,16 +196,16 @@ const App = () => {
                       lineHeight: "110%",
                     }}
                   >
-                    High-performance B2B websites that flood your business with
-                    ready-to-buy customers.
+                    Most resumes are never read.
                   </div>
                 </div>
 
                 <div className="para">
                   <p className="paraOne">
-                    Design, copy, and development engineered to
+                    Don't be like everyone else, jump the queue, get noticed,
+                    find who's hiring for your next role and send them an email.{" "}
                   </p>
-                  <p className="paraOne paraTwo" style={{ color: "white" }}>
+                  {/* <p className="paraOne paraTwo" style={{ color: "white" }}>
                     turn browsers into buyers
                     <span
                       style={{
@@ -113,12 +217,12 @@ const App = () => {
                       and{" "}
                     </span>
                     drive sales on autopilot.
-                  </p>
+                  </p> */}
                 </div>
 
                 <div className="button-section">
                   <a className="claim-button-top">
-                    <div className="btnimgcon">
+                    {/* <div className="btnimgcon">
                       <img
                         height="100%"
                         width="100%"
@@ -131,13 +235,11 @@ const App = () => {
                         src="https://framerusercontent.com/images/Oel3kyZZ6WT9S5V7bMa7TxlCP3U.png"
                         alt=""
                       />
-                    </div>
+                    </div> */}
 
                     <div className="claim-text-con">
                       <div>
-                        <p className="claim-text">
-                          Claim Your Free Strategy Call Now
-                        </p>
+                        <p className="claim-text">Find Your next Boss!</p>
                       </div>
                     </div>
                   </a>
@@ -156,65 +258,126 @@ const App = () => {
                           " var(--token-c366171b-28e0-4d06-8b69-ef8c4c7d29bf, rgb(82, 82, 82))",
                       }}
                     >
-                      Fixed costs. No lock-ins. Clear deliverables.
+                      Spend as less as $5 to get your next 6 figure job!
                     </p>
                   </div>
                 </div>
+                <p
+                  className="paraOne"
+                  style={{
+                    fontSize: "28px",
+                    color: "white",
+                    marginTop: "20px",
+                  }}
+                >
+                  100+ customers have emailed hiring managers and gotten edge at
+                  leading firms
+                </p>
 
                 <div className="logos-container">
-                  <div className="section">
-                    <ul className="ul">
-                      <li>
-                        <div className="li-container">
-                          <div className="li-y-combinator">
-                            <Brand imgUrl="https://framerusercontent.com/images/VeMjxejNWALiBEm37FVdzAxOhKA.png" />
+                  <div className="section slider-container">
+                    <ul className="ul slider">
+                      <div className="slide">
+                        <li>
+                          <div className="li-container">
+                            <div className="li-y-combinator">
+                              <Brand imgUrl={amazon} />
+                            </div>
                           </div>
-                        </div>
-                      </li>
+                        </li>
+                      </div>
 
-                      <BrandContainer
-                        width="px"
-                        ar="0.84375 "
-                        imgUrl="https://framerusercontent.com/images/sovZmD4SJsQadVKuem8MZgtex1w.png"
-                      />
+                      <div className="slide">
+                        <BrandContainer
+                          width="100px"
+                          // ar="0.84375 "
+                          imgUrl={amd}
+                        />
+                      </div>
 
-                      <BrandContainer
-                        width="70px"
-                        imgUrl="https://framerusercontent.com/images/rhOGDNL6iI5dwjVhBTnsag10QI.png"
-                      />
+                      <div className="slide">
+                        <BrandContainer width="100px" imgUrl={boss} />
+                      </div>
 
-                      <BrandContainer
-                        width="87px"
-                        imgUrl="https://framerusercontent.com/images/0SUSmn1QUW09w6woJhZNkIHW30.png"
-                      />
+                      <div className="slide">
+                        <BrandContainer width="87px" imgUrl={databricks} />
+                      </div>
 
-                      <BrandContainer
-                        width="80px"
-                        imgUrl="https://framerusercontent.com/images/BouC8pyBpkmyq0L70ebleMqNp8.png"
-                      />
+                      <div className="slide">
+                        <BrandContainer width="100px" imgUrl={deel} />
+                      </div>
 
-                      <BrandContainer
-                        width="153px"
-                        imgUrl="https://framerusercontent.com/images/Jo9QzSoOBGVX9KrhGgexLa6B0g.png"
-                      />
+                      <div className="slide">
+                        <BrandContainer width="153px" imgUrl={docsend} />
+                      </div>
 
-                      <BrandContainer
-                        width="95px"
-                        imgUrl="https://framerusercontent.com/images/REjn1hgs7MxTYoFK09R7FfnPI.png"
-                      />
+                      <div className="slide">
+                        <BrandContainer width="95px" imgUrl={flair} />
+                      </div>
 
-                      <BrandContainer
-                        width="131px"
-                        imgUrl="https://framerusercontent.com/images/GUG9D2BDs90m0XvyQIw1ucznzSQ.png"
-                      />
-
-                      <li>
-                        <div className="li-container">
-                          <div className="li-y-combinator">
-                            <Brand imgUrl="https://framerusercontent.com/images/d0QAgZeotmF1qrFYP6qzZEU9tuw.png" />
+                      <div className="slide">
+                        <BrandContainer width="100px" imgUrl={google} />
+                      </div>
+                      <div className="slide">
+                        <BrandContainer width="100px" imgUrl={jobber} />
+                      </div>
+                      <div className="slide">
+                        <BrandContainer width="100px" imgUrl={kuku} />
+                      </div>
+                      <div className="slide">
+                        <BrandContainer width="100px" imgUrl={lightspeed} />
+                      </div>
+                      <div className="slide">
+                        <BrandContainer width="100px" imgUrl={Lululemon} />
+                      </div>
+                      <div className="slide">
+                        <BrandContainer width="100px" imgUrl={McKinsey} />
+                      </div>
+                      <div className="slide">
+                        <BrandContainer width="100px" imgUrl={microsoft} />
+                      </div>
+                      <div className="slide">
+                        <BrandContainer width="100px" imgUrl={mongodb} />
+                      </div>
+                      <div className="slide">
+                        <BrandContainer width="100px" imgUrl={neo} />
+                      </div>
+                      <div className="slide">
+                        <BrandContainer width="100px" imgUrl={questionpro} />
+                      </div>
+                      <div className="slide">
+                        <BrandContainer width="100px" imgUrl={rainforest} />
+                      </div>
+                      <div className="slide">
+                        <BrandContainer width="100px" imgUrl={Tata} />
+                      </div>
+                      <div className="slide">
+                        <BrandContainer width="100px" imgUrl={td} />
+                      </div>
+                      <div className="slide">
+                        <BrandContainer width="100px" imgUrl={telus} />
+                      </div>
+                      <div className="slide">
+                        <BrandContainer width="100px" imgUrl={touch} />
+                      </div>
+                      <div className="slide">
+                        <BrandContainer width="100px" imgUrl={tripadvisor} />
+                      </div>
+                      <div className="slide">
+                        <BrandContainer width="100px" imgUrl={truecaller} />
+                      </div>
+                      <div className="slide">
+                        <BrandContainer width="100px" imgUrl={workday} />
+                      </div>
+                      <div className="slide">
+                        <li>
+                          <div className="li-container">
+                            <div className="li-y-combinator">
+                              <Brand imgUrl="https://framerusercontent.com/images/d0QAgZeotmF1qrFYP6qzZEU9tuw.png" />
+                            </div>
                           </div>
-                        </div>
-                      </li>
+                        </li>
+                      </div>
                     </ul>
                   </div>
                 </div>
@@ -225,6 +388,7 @@ const App = () => {
           <div
             style={{ alignItems: "flex-start" }}
             className=" header-section work-section"
+            id="work"
           >
             <div
               className="arrow-container header-section"
@@ -234,34 +398,12 @@ const App = () => {
                 <span className="rotate-text">Some recent work</span>
               </div>
 
-              <div
-                name="arrow, hand drawn, scribble, doodle, 10"
-                style={{
-                  imageRendering: "pixelated",
-                  flexShrink: "0",
-                  fill: "rgba(0,0,0,1)",
-                  color: "rgba(0,0,0,1)",
-                }}
-                className="framer-2dz9uz"
-              >
-                <div
-                  className="svgContainer"
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    aspectRatio: "inherit",
-                  }}
-                >
-                  <svg
-                    style={{ width: "100%", height: "100%" }}
-                    viewBox="0 0 92 92"
-                    preserveAspectRatio="none"
-                    width="100%"
-                    height="100%"
-                  >
-                    <use href="#svg-1163861069_5874"></use>
-                  </svg>
-                </div>
+              <div style={{ display: "flex" }}>
+                <img height="100px" width="100px" src={arrowdown} alt="" />
+                <p className="testi-big-text">
+                  BDRs, SDRs, Product Managers, Marketing Gurus are all skipping
+                  the queue and you should too!
+                </p>
               </div>
 
               <Slider />
@@ -273,24 +415,100 @@ const App = () => {
         <div className="problem-section">
           <div className="problem-container">
             <ProblemTitle
-              heading="You don't have a traffic problem... you're failing to convert that traffic into leads."
-              para="The REAL challenge is turning clicks into conversions."
+              heading="Your resume isn’t the problem... your dream job is just receiving too much attention."
+              para="The real challenge is getting your resume noticed by a recruiter or hiring manager."
             />
             <div className="problem-ques">
               <Problem
-                svg="#svg10492782262"
-                heading="Lost in the Competition"
-                para="In a sea of competitors, it's hard to make your brand stand out when everyone is fighting for attention."
+                svg={
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="rgb(102, 102, 255)"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    style={{
+                      width: "100px",
+                      height: "100px",
+                      marginBottom: "10px",
+                    }}
+                  >
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                }
+                heading="Sea Of Candidates"
+                para="Every single job posting receives 1000+ candidates in 2024 with 100+ candidates applying in the first few hours of the post being live."
               />
               <Problem
-                svg="#svg12690713410"
-                heading="Leads not Following"
-                para="Struggling to turn site visitors into leads? Your strategies might be missing the mark with your target audience."
+                svg={
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="rgb(102, 102, 255)"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    style={{
+                      width: "100px",
+                      height: "100px",
+                      marginBottom: "10px",
+                    }}
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="15" y1="9" x2="9" y2="15"></line>
+                    <line x1="9" y1="9" x2="15" y2="15"></line>
+                  </svg>
+                }
+                heading="Recruiters Suck"
+                para="Most recruiters often have very little idea about the position they are hiring for and most of the times they end up choosing incorrectly."
               />
               <Problem
-                svg="#svg10645988170"
-                heading="Customer Conversion Challenges"
-                para="Getting clicks is just the start. The real challenge lies in converting those clicks into loyal customers."
+                svg={
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="rgb(102, 102, 255)"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    style={{
+                      width: "100px",
+                      height: "100px",
+                      marginBottom: "10px",
+                    }}
+                  >
+                    <rect
+                      x="4"
+                      y="4"
+                      width="16"
+                      height="16"
+                      rx="2"
+                      ry="2"
+                    ></rect>
+                    <rect x="9" y="9" width="6" height="6"></rect>
+                    <line x1="9" y1="1" x2="9" y2="4"></line>
+                    <line x1="15" y1="1" x2="15" y2="4"></line>
+                    <line x1="9" y1="20" x2="9" y2="23"></line>
+                    <line x1="15" y1="20" x2="15" y2="23"></line>
+                    <line x1="20" y1="9" x2="23" y2="9"></line>
+                    <line x1="20" y1="14" x2="23" y2="14"></line>
+                    <line x1="1" y1="9" x2="4" y2="9"></line>
+                    <line x1="1" y1="14" x2="4" y2="14"></line>
+                  </svg>
+                }
+                heading="AI is Screening You"
+                para="ATS is a thing of the past. Your job application is being screened by an AI tool 90% of the time and most models are highly inaccurate when it comes to hiring."
               />
             </div>
           </div>
@@ -305,17 +523,15 @@ const App = () => {
             />
             <div className="problem-ques">
               <Problem
-                svg="#svg8741899787"
+                svg=""
                 heading="Compelling Copy"
                 para="Crafting words that engage, resonate, and ultimately convince your audience to take action."
               />
               <Problem
-                svg="#svg12246595340"
                 heading="Top-Tier Branding"
                 para="Design a brandidentity to standout in a crowded market place."
               />
               <Problem
-                svg="#svg9496881610"
                 heading="Conversion-Focused Design"
                 para="Creating visually appealing designs that are optimized for maximum conversion rates"
               />
@@ -329,6 +545,23 @@ const App = () => {
         <Services />
         <HowItWorks />
         <Pricing />
+        <div className="card-div">
+          <div className="testi-head-section">
+            <div className="testi-text-container">
+              <p>Testimonials</p>
+            </div>
+            <h1 className="testi-big-text">Loved by job seekers worldwide</h1>
+          </div>
+          <div className="card-container">
+            {review.map((element) => (
+              <Card
+                key={element.id}
+                name={element.username}
+                dis={element.discription}
+              />
+            ))}
+          </div>
+        </div>
         <FAQ />
         {/* Footer  */}
 

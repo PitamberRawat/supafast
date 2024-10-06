@@ -19,7 +19,9 @@
   border-top-width: 1px;
   border-bottom-width: 0;
   border-right-width: 0;
+
   border-left-width: 0;
+  background-color: black;
 }
 .faq-container {
   align-items: center;
@@ -115,13 +117,6 @@
   word-wrap: break-word;
 }
 .ques-text {
-  font-family: "Manrope", "Manrope Placeholder", sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-  line-height: 150%;
-  color: white;
 }
 .plus-container {
   align-items: center;
@@ -222,6 +217,55 @@
   white-space: pre;
   alignment: center;
   color: rgb(249, 249, 249);
+}
+.faqques-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+  cursor: pointer;
+
+  border-bottom-width: 2px;
+  border-color: rgb(64, 64, 64);
+  border-left-width: 2px;
+  border-right-width: 2px;
+  border-style: solid;
+  border-top-width: 2px;
+  background-color: rgb(10, 10, 10);
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: none;
+  opacity: 1;
+  margin: 10px 0;
+}
+
+.question-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.question {
+  font-family: "Manrope", "Manrope Placeholder", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 150%;
+  color: white;
+}
+
+.toggle-button {
+  color: white;
+  font-size: 20px;
+  padding-bottom: 5px;
+  font-weight: bolder;
+}
+
+.answer {
+  margin-top: 10px;
+  color: #a3a3a3;
 }
 
 @media (min-width: 810px) and (max-width: 1199px) {

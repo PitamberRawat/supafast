@@ -1,9 +1,16 @@
 import React, { useEffect, useState } from "react";
 import "./Services.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import amd from "../assets/imgfold1/AMD.png";
+import DataBricks from "../assets/imgfold1/DataBricks.jpg";
+import Google from "../assets/imgfold1/Google.jpg";
+import Mckinsey from "../assets/imgfold1/Mckinsey.jpg";
+import MS from "../assets/imgfold1/MS.jpg";
+import TripAdvisor from "../assets/imgfold1/TripAdvisor.jpg";
+import WorkDay from "../assets/imgfold1/WorkDay.jpg";
 
 const Slider = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -25,7 +32,6 @@ const Slider = () => {
   return (
     <div
       style={{
-        backgroundColor: "",
         width: `${
           windowWidth > 1000
             ? "1000px"
@@ -45,21 +51,36 @@ const Slider = () => {
         spaceBetween={10}
         loop={true}
         navigation={true}
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay]}
+        autoplay={{
+          delay: 1500,
+        }}
       >
         <SwiperSlide>
           <img
             style={{
               width: "100%",
-              height: "100%",
-              objectFit: "cover",
+              // height: "500px",
+              objectFit: "contain",
               objectPosition: "center center",
               margin: "10px",
             }}
-            src="https://framerusercontent.com/images/rOhBmmQQ5OcWfZhAU6Lyz5RYpw.png?scale-down-to=1024"
+            src={amd}
             alt=""
           />
-          <p className="slide-name">International Payment Solutions</p>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            style={{
+              width: "100%",
+              // height: "500px",
+              objectFit: "contain",
+              objectPosition: "center center",
+              margin: "10px",
+            }}
+            src={DataBricks}
+            alt=""
+          />
         </SwiperSlide>
         <SwiperSlide>
           <img
@@ -70,10 +91,9 @@ const Slider = () => {
               objectPosition: "center center",
               margin: "10px",
             }}
-            src="https://framerusercontent.com/images/P9tbhyvJqs5tqYUWjMPQnApXBe0.png?scale-down-to=1024"
+            src={Google}
             alt=""
           />
-          <p className="slide-name">Customer Relationship Management</p>
         </SwiperSlide>
         <SwiperSlide>
           <img
@@ -84,10 +104,9 @@ const Slider = () => {
               objectPosition: "center center",
               margin: "10px",
             }}
-            src="https://framerusercontent.com/images/8Sp4OaLF3PWukaFpQDrQeHNeXdE.png?scale-down-to=1024"
+            src={Mckinsey}
             alt=""
           />
-          <p className="slide-name">Investment Project Page</p>
         </SwiperSlide>
         <SwiperSlide>
           <img
@@ -98,10 +117,9 @@ const Slider = () => {
               objectPosition: "center center",
               margin: "10px",
             }}
-            src="https://framerusercontent.com/images/MUSob9q3oySgi42lEyPtsY8dBGU.png?scale-down-to=1024"
+            src={MS}
             alt=""
           />
-          <p className="slide-name">Cybersecurity</p>
         </SwiperSlide>
         <SwiperSlide>
           <img
@@ -112,10 +130,9 @@ const Slider = () => {
               objectPosition: "center center",
               margin: "10px",
             }}
-            src="https://framerusercontent.com/images/pqi9uxEXeJY60Rz5lNulr6mVJU.png?scale-down-to=1024"
+            src={TripAdvisor}
             alt=""
           />
-          <p className="slide-name">Healthcare Payment Solutions</p>
         </SwiperSlide>
         <SwiperSlide>
           <img
@@ -126,24 +143,9 @@ const Slider = () => {
               objectPosition: "center center",
               margin: "10px",
             }}
-            src="https://framerusercontent.com/images/LBm6TPEIy9fJyPYFIGebi3fAA.png?scale-down-to=1024"
+            src={WorkDay}
             alt=""
           />
-          <p className="slide-name">Mental Health Tech</p>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              objectPosition: "center center",
-              margin: "10px",
-            }}
-            src="https://framerusercontent.com/images/g5oGZLvdqNSySXDIqvAO8cj3X4.png?scale-down-to=1024"
-            alt=""
-          />
-          <p className="slide-name">AI Video Content Creation</p>
         </SwiperSlide>
       </Swiper>
     </div>

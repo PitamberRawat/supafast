@@ -1,9 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import "./FAQ.css";
 import ProblemTitle from "./ProblemTitle";
 const FAQ = () => {
+  const faqs = [
+    {
+      question: "What is your return policy?",
+      answer: "You can return any item within 30 days of purchase.",
+    },
+    {
+      question: "How do I track my order?",
+      answer:
+        "You can track your order using the tracking link in your confirmation email.",
+    },
+    {
+      question: "Do you ship internationally?",
+      answer: "Yes, we ship to many countries around the world.",
+    },
+  ];
+
   return (
-    <div className="faq">
+    <div className="faq" id="faq">
       <div className="faq-container">
         <div className="tools" style={{ marginBottom: "-30px" }}>
           <div className="tools-container">
@@ -22,21 +38,15 @@ const FAQ = () => {
               position: "relative",
             }}
           >
-            <div className="left-faq">
-              <Quescontainer ques="Who’s behind Supafast?" />
-            </div>
-            <div className="left-faq">
-              <Quescontainer ques="Why not hire a full-time designer and developer" />
-            </div>
-            <div className="left-faq">
-              <Quescontainer ques="What if I'm not happy with the results?" />
-            </div>
-            <div className="left-faq">
-              <Quescontainer ques="How quickly will I receive my project?" />
-            </div>
-            <div className="left-faq">
-              <Quescontainer ques="Can I get a refund?" />
-            </div>
+            {faqs.map((faq, index) => (
+              <div className="left-faq">
+                <Quescontainer
+                  key={index}
+                  question={faq.question}
+                  answer={faq.answer}
+                />
+              </div>
+            ))}
           </div>
           <div className="right-faq">
             <div className="book-pic-container">
@@ -91,9 +101,27 @@ const FAQ = () => {
 
 export default FAQ;
 
-export const Quescontainer = ({ ques }) => {
+export const Quescontainer = ({ question, answer }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleAnswer = () => {
+    setIsOpen(!isOpen);
+  };
   return (
-    <div className="ques-container">
+    <div className="faqques-container">
+      <div className="question-container" onClick={toggleAnswer}>
+        <h3 className="question">{question}</h3>
+        <div className="plus-container">
+          <span className="toggle-button">{isOpen ? "❌" : "+"}</span>
+        </div>
+      </div>
+      {isOpen && <p className="answer">{answer}</p>}
+    </div>
+  );
+};
+
+{
+  /* <div className="ques-container">
       <div className="ques-div">
         <div className="ques-ques">
           <p className="ques-text">{ques}</p>
@@ -102,6 +130,5 @@ export const Quescontainer = ({ ques }) => {
           <span className="plus">+</span>
         </div>
       </div>
-    </div>
-  );
-};
+    </div> */
+}
