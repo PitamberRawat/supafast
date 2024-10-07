@@ -12,10 +12,9 @@ import Services from "./components/Services";
 import Slider from "./components/Slider";
 
 import Star from "./components/Star";
-import Testimonial from "./components/Testimonial";
 
 import arrowdown from "../src/assets/arrowdown.png";
-import logo from "../src/assets/BFA_logo.png";
+import logo from "../src/assets/bfalogo.png";
 import amd from "../src/assets/logos/amd.png";
 import amazon from "../src/assets/logos/amazon.png";
 import boss from "../src/assets/logos/boss.png";
@@ -150,7 +149,7 @@ const App = () => {
               alignItems: "center",
             }}
           >
-            <div></div>
+            <div className="blank" style={{ display: "none" }}></div>
             <img
               src={logo}
               alt=""
