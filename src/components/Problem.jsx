@@ -1,11 +1,12 @@
 import React from "react";
 import "./Problem.css";
 
-const Problem = ({ heading, para, svg, flag }) => {
+const Problem = ({ heading, para, svg, flag, solution }) => {
   return (
     <div className="problem-div">
       {flag ? (
         <>
+          {svg}
           <div style={{ backgroundColor: "white", borderRadius: "20px" }}>
             <img style={{ height: "100px" }} src={svg} alt="" />
           </div>
@@ -29,6 +30,9 @@ const Problem = ({ heading, para, svg, flag }) => {
         </>
       ) : (
         <>
+          <div style={{ backgroundColor: "", borderRadius: "20px" }}>
+            <img style={{ height: "100px" }} src={svg} alt="" />
+          </div>
           {svg}
           <div className="text-section">
             <div className="text-divvv">

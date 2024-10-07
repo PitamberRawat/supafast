@@ -35,13 +35,7 @@ const Pricing = () => {
         </div>
         <div className="header-Psection ">
           <h3 className="problem-text" style={{ color: "black" }}>
-            Ready to Land
-          </h3>
-          <h3
-            className="problem-text"
-            style={{ marginTop: "-20px", color: "black" }}
-          >
-            your next role?
+            Ready to Land your next role?
           </h3>
         </div>
 
@@ -61,12 +55,37 @@ const Pricing = () => {
                     <div
                       style={{
                         display: "flex",
-                        flexDirection: "column",
+                        flexDirection: "row",
                         justifyContent: "flex-start",
                         flexShrink: "0",
                       }}
                     >
-                      <p className="price">$2</p>
+                      <span className="price">$3</span>
+                      <span
+                        className="price"
+                        style={{
+                          marginLeft: "5px",
+                          marginTop: "10px",
+                          fontSize: "25px",
+                          textDecoration: "line-through",
+                        }}
+                      >
+                        $5
+                      </span>
+                    </div>
+                    <div
+                      className="para-start-div"
+                      style={{ backgroundColor: "black" }}
+                    >
+                      <p
+                        className="para-start"
+                        style={{
+                          fontSize: "14px",
+                          color: "white",
+                        }}
+                      >
+                        Early bird pricing till 15th October!
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -87,13 +106,10 @@ const Pricing = () => {
                     <Pointdiv point="5 Credits" />
                     <Pointdiv point="Get Top 2 Matches per search" />
                     <Pointdiv point="Look For Upto 5 Jobs" />
-                    <Pointdiv point="Delivery Time: 15 Mins" />
+                    {/* <Pointdiv point="Delivery Time: 30 Mins" /> */}
                   </div>
                 </div>
-                <a
-                  href="https://cal.com/namya/15min?date=2024-09-11&month=2024-09"
-                  className="btn-anchor"
-                >
+                <a href="" className="btn-anchor">
                   <p className="btn-secure-para">Get Started </p>
                   <span className="arrow-right">→</span>
                 </a>
@@ -124,7 +140,7 @@ const Pricing = () => {
                       }}
                     >
                       <p className="price" style={{ color: "white" }}>
-                        $10{" "}
+                        $19
                         <span
                           style={{
                             fontSize: "16px",
@@ -132,8 +148,35 @@ const Pricing = () => {
                             letterSpacing: "normal",
                           }}
                         >
-                          p/month
+                          <span
+                            className="price"
+                            style={{
+                              marginLeft: "5px",
+                              marginTop: "10px",
+                              fontSize: "25px",
+                              marginRight: "10px",
+                              color: "white",
+                              textDecoration: "line-through",
+                            }}
+                          >
+                            $49{" "}
+                          </span>
+                          per month
                         </span>
+                      </p>
+                    </div>
+                    <div
+                      className="para-start-div"
+                      style={{ backgroundColor: "white" }}
+                    >
+                      <p
+                        className="para-start"
+                        style={{
+                          fontSize: "14px",
+                          color: "black",
+                        }}
+                      >
+                        Early bird pricing till 15th October!
                       </p>
                     </div>
                   </div>
@@ -154,13 +197,13 @@ const Pricing = () => {
                   </div>
 
                   <div className="feature-points-div">
-                    <Pointdiv flag={true} point="100 Credits" />
+                    <Pointdiv flag={true} point="50 Credits" />
                     <Pointdiv
                       flag={true}
                       point="Get Top 5 Matches per search"
                     />
-                    <Pointdiv flag={true} point="Look For Upto 100 Jobs" />
-                    <Pointdiv flag={true} point="Delivery Time: 10 Mins" />
+                    <Pointdiv flag={true} point="Look For Upto 50 Jobs" />
+                    {/* <Pointdiv flag={true} point="Delivery Time: 20 Mins" /> */}
                     <Pointdiv
                       flag={true}
                       point="Upto 10 AI Email Copy: Coming Soon"
@@ -168,7 +211,7 @@ const Pricing = () => {
                   </div>
                 </div>
                 <a
-                  href="https://cal.com/namya/15min?date=2024-09-11&month=2024-09"
+                  href=""
                   className="btn-anchor"
                   style={{ backgroundColor: "white" }}
                 >
@@ -204,7 +247,45 @@ const Pricing = () => {
                       flexShrink: "0",
                     }}
                   >
-                    <p className="price">$49</p>
+                    <p className="price">
+                      $49
+                      <span
+                        className="price"
+                        style={{
+                          marginLeft: "5px",
+                          marginTop: "10px",
+                          fontSize: "25px",
+                          // color: "white",
+                          textDecoration: "line-through",
+                        }}
+                      >
+                        $299{" "}
+                      </span>
+                      <span
+                        style={{
+                          fontSize: "16px",
+                          fontWeight: "normal",
+                          letterSpacing: "normal",
+                          marginLeft: "10px",
+                        }}
+                      >
+                        lifetime access
+                      </span>
+                    </p>
+                  </div>
+                  <div
+                    className="para-start-div"
+                    style={{ backgroundColor: "black" }}
+                  >
+                    <p
+                      className="para-start"
+                      style={{
+                        fontSize: "14px",
+                        color: "white",
+                      }}
+                    >
+                      Early bird pricing till 15th October!
+                    </p>
                   </div>
                 </div>
               </div>
@@ -225,15 +306,12 @@ const Pricing = () => {
                   <Pointdiv point="50 Credits Every Day" />
                   <Pointdiv point="Get Top 7 Matches" />
                   <Pointdiv point="Look For Unlimited Jobs" />
-                  <Pointdiv point="Delivery Time: 5 Mins" />
+                  {/* <Pointdiv point="Delivery Time: 15 Mins" /> */}
                   <Pointdiv point="LifeTime Support & Updates" />
                   <Pointdiv point="Unlimited AI Email Copy: Coming Soon" />
                 </div>
               </div>
-              <a
-                href="https://cal.com/namya/15min?date=2024-09-11&month=2024-09"
-                className="btn-anchor"
-              >
+              <a href="" className="btn-anchor">
                 <p className="btn-secure-para">Get Started </p>
                 <span className="arrow-right">→</span>
               </a>

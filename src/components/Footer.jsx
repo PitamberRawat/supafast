@@ -22,7 +22,7 @@ const Footer = () => {
             }}
           />
         </div>
-        <div>
+        {/* <div>
           <div
             style={{ maxWidth: "1200px", width: "100%", textAlign: "center" }}
           >
@@ -83,9 +83,9 @@ const Footer = () => {
           >
             Be quick! Spots are almost gone for October
           </div>
-        </div>
+        </div> */}
 
-        <div className="supafast-footer">
+        <div className="bossfinder-footer">
           <div>
             <div className="logo">
               {/* <div className="svgContainer">
@@ -95,23 +95,20 @@ const Footer = () => {
               </div> */}
             </div>
             <div>
-              <p className="supafast-para">
-                © Supafast 2024. All rights reserved.
+              <p className="bossfinder-para">
+                © Boss Finder AI 2024. All rights reserved.
               </p>
             </div>
           </div>
           {/* right */}
           <div className="socials">
-            <a className="social-media" href="https://x.com/namyakhann">
+            <a className="social-media" href="">
               <img height="50px" width="40px" src={x} alt="" />
             </a>
-            <a
-              className="social-media"
-              href="https://www.linkedin.com/in/namyakhan/"
-            >
+            <a className="social-media" href="">
               <img height="50px" width="40px" src={i} alt="" />
             </a>
-            <a className="social-media" href="mailto:%20khannamya@gmail.com">
+            <a className="social-media" href="">
               <img height="50px" width="40px" src={at} alt="" />
             </a>
           </div>
@@ -119,14 +116,14 @@ const Footer = () => {
       </div>
       <div className="sticky-navbar">
         <div className="nav-container">
-          <img
+          {/* <img
             style={{
               height: "60px",
               width: "90px",
             }}
             src="https://framerusercontent.com/images/gAKACEGDrWnhhE9OEb1ppLbSqc.png"
             alt=""
-          />
+          /> */}
 
           <div className="links">
             <a href="#how" className="link">
@@ -138,7 +135,7 @@ const Footer = () => {
             </a>
 
             <a href="#work" className="link">
-              Work
+              Proof
             </a>
 
             <a href="#faq" className="link">
@@ -147,30 +144,10 @@ const Footer = () => {
           </div>
 
           <div className="contact-section">
-            <div className="contact-pic">
-              <div
-                style={{
-                  position: "absolute",
-                  borderRadius: "inherit",
-                  inset: "0px",
-                }}
-              >
-                <img
-                  src="https://framerusercontent.com/images/Oel3kyZZ6WT9S5V7bMa7TxlCP3U.png"
-                  alt=""
-                  style={{
-                    height: "100%",
-                    width: "100%",
-                    objectFit: "cover",
-                    objectPosition: "center center",
-                    borderRadius: "inherit",
-                    display: "block",
-                  }}
-                />
-              </div>
-            </div>
             <div className="book-text">
-              <p>Book a call with Namya</p>
+              <p style={{ fontWeight: "700" }}>
+                Email your hiring manager today!
+              </p>
             </div>
           </div>
         </div>

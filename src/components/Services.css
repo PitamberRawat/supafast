@@ -66,9 +66,10 @@
 .head3 {
   font-family: "Manrope", "Manrope Placeholder", sans-serif;
   color: #fff;
-  font-size: 56px;
+  text-align: center;
+  font-size: 36px;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 120%;
 }

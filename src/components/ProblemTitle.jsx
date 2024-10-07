@@ -11,7 +11,7 @@ const ProblemTitle = ({ heading, para, flag }) => {
         <h3 className="problem-text">{heading}</h3>
         {flag ? (
           <h3 className="problem-text" style={{ marginTop: "-24px" }}>
-            Conversion-focused design.
+            Send an email to the hiring manager of your dream job.
           </h3>
         ) : null}
       </div>
@@ -19,8 +19,9 @@ const ProblemTitle = ({ heading, para, flag }) => {
       <p className="problem-para">{para}</p>
       {flag ? (
         <p className="problem-para" style={{ marginTop: "-65px" }}>
-          Moving beyond surface metrics to emotional impact that turns browsers
-          into buyers.
+          Boss Finder AI helps you land your dream job by finding out who's
+          responsible for hiring and provides you with their email so you can
+          stand out.
         </p>
       ) : null}
     </>

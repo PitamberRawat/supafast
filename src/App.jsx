@@ -15,6 +15,7 @@ import Star from "./components/Star";
 import Testimonial from "./components/Testimonial";
 
 import arrowdown from "../src/assets/arrowdown.png";
+import logo from "../src/assets/BFA_logo.png";
 import amd from "../src/assets/logos/amd.png";
 import amazon from "../src/assets/logos/amazon.png";
 import boss from "../src/assets/logos/boss.png";
@@ -40,6 +41,14 @@ import telus from "../src/assets/logos/telus.png";
 import tripadvisor from "../src/assets/logos/tripadvisor.svg";
 import truecaller from "../src/assets/logos/truecaller.png";
 import workday from "../src/assets/logos/workday.jpg";
+import p1 from "../src/assets/peoples/p1.jpg";
+import p2 from "../src/assets/peoples/p2.jpg";
+import p3 from "../src/assets/peoples/p3.jpg";
+import p4 from "../src/assets/peoples/p4.jpg";
+import p5 from "../src/assets/peoples/p5.jpg";
+import dice from "../src/assets/dice.png";
+import bulb from "../src/assets/bulb.svg";
+import cross from "../src/assets/cross.svg";
 import Card from "./components/Card";
 
 const review = [
@@ -133,15 +142,28 @@ const App = () => {
               />
             </div>
           </div>
-
-          <div className="logo">
-            <div
-              class="svgContainer"
-              style={{ width: "100%", height: "100%", aspectRatio: "inherit" }}
-            >
-              <svg style={{ width: "100%", height: "100%" }}>
-                <use href="https://withsupafast.com#svg9604681989"></use>
-              </svg>
+          <div
+            style={{
+              display: "flex",
+              width: "100%",
+              justifyContent: "space-between",
+              alignItems: "center",
+            }}
+          >
+            <div></div>
+            <img
+              src={logo}
+              alt=""
+              width="200px"
+              style={{
+                marginBottom: "-120px",
+                marginLeft: "120px",
+                marginTop: "-80px",
+              }}
+            />
+            <div style={{ display: "flex", gap: "4px" }}>
+              <button className="auth-btn">Sign up</button>
+              <button className="auth-btn">Log in</button>
             </div>
           </div>
 
@@ -150,11 +172,11 @@ const App = () => {
               <div className="header-section">
                 <div className="sec-container">
                   <div style={{ display: "flex" }}>
-                    <Avatar imgUrl="https://senjaio.b-cdn.net/public/avatar/1b9ce75f-5a1b-47af-9c3d-e978707a6862_profpic.jpg?width=60&amp;height=60&amp;format=webp" />
-                    <Avatar imgUrl="https://senjaio.b-cdn.net/public/avatar/ba50fd1b-9909-4a1f-9bd3-e1841949b4e1_Headshot.png?width=60&height=60&format=webp" />
-                    <Avatar imgUrl="https://senjaio.b-cdn.net/public/media/d34dd908-9b54-4f39-a3b5-4c3ea4c4e1f3_09ac26ac-6cd4-485e-a1a4-d2e623f5eb2b_1680763036320.jpeg?width=60&height=60&format=webp" />
-                    <Avatar imgUrl="https://senjaio.b-cdn.net/public/media/c37d1b08-4f20-4226-b889-f447a637861d_59038089-de4c-4864-bfdc-b5b7f6a374d7_1582303022773.jpeg?width=60&height=60&format=webp" />
-                    <Avatar imgUrl="https://senjaio.b-cdn.net/public/avatar/6aaee6df-c4ee-474e-bf9d-ae1211eadbe7_IMG_3517.jpeg?width=60&height=60&format=webp" />
+                    <Avatar imgUrl={p1} />
+                    <Avatar imgUrl={p2} />
+                    <Avatar imgUrl={p3} />
+                    <Avatar imgUrl={p4} />
+                    <Avatar imgUrl={p5} />
                   </div>
 
                   <div
@@ -180,7 +202,7 @@ const App = () => {
                         color: "var(--clr-text)",
                       }}
                     >
-                      100+ Startup Founders Love Supafast
+                      100+ Job Seekers Love Boss Finder AI
                     </div>
                   </div>
                 </div>
@@ -395,7 +417,7 @@ const App = () => {
               style={{ alignItems: "flex-start" }}
             >
               <div className="some-recent-work">
-                <span className="rotate-text">Some recent work</span>
+                <span className="rotate-text">Here's Some Proof</span>
               </div>
 
               <div style={{ display: "flex" }}>
@@ -514,34 +536,47 @@ const App = () => {
           </div>
         </div>
 
+        {/* The Solution:
+Landing Straight In Their Inbox
+
+83% of the candidates that go the extra mile have a higher chance of being interviewed and  getting hired. Tell your boss that you’ve got what it takes to make a difference .
+
+
+
+Proactive Approach
+Hiring managers are always looking for go getters and they appreciate the fact that you’re dedicated enough to find out about them and reach out with a personalized message. 
+
+
+
+Resume Is Not Everything
+ */}
+
         <div className="solution-section s-section">
           <div className="solution-container">
-            <ProblemTitle
-              heading="The solution:"
-              para="Designs that captivate, copy that resonates, and development that converts."
-              flag="true"
-            />
+            <ProblemTitle heading="The solution:" para="" flag="true" />
             <div className="problem-ques">
               <Problem
-                svg=""
-                heading="Compelling Copy"
-                para="Crafting words that engage, resonate, and ultimately convince your audience to take action."
+                svg={dice}
+                heading="Beat the Odds"
+                para="83% of the candidates that go the extra mile have a higher chance of being interviewed and  getting hired. Tell your boss that you’ve got what it takes to make a difference."
               />
               <Problem
-                heading="Top-Tier Branding"
-                para="Design a brandidentity to standout in a crowded market place."
+                svg={bulb}
+                heading="Proactive Approach"
+                para="Hiring managers are always looking for go getters and they appreciate the fact that you’re dedicated enough to find out about them and reach out with a personalized message."
               />
               <Problem
-                heading="Conversion-Focused Design"
-                para="Creating visually appealing designs that are optimized for maximum conversion rates"
+                svg={cross}
+                heading="Resume Is Not Everything"
+                para="Everyone knows that resumes never tell the whole story and there is so much more to a person than just that one piece of paper. Shine through by breaking the barriers and get hired!"
               />
             </div>
           </div>
         </div>
 
-        <div className="testimonial-section s-section" style={{ gap: "0px" }}>
+        {/* <div className="testimonial-section s-section" style={{ gap: "0px" }}>
           <Testimonial />
-        </div>
+        </div> */}
         <Services />
         <HowItWorks />
         <Pricing />
@@ -567,13 +602,13 @@ const App = () => {
 
         <Footer />
 
-        <div className="launcher">
+        {/* <div className="launcher">
           <div className="launcher-container">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 32">
               <path d="M28 32s-4.714-1.855-8.527-3.34H3.437C1.54 28.66 0 27.026 0 25.013V3.644C0 1.633 1.54 0 3.437 0h21.125c1.898 0 3.437 1.632 3.437 3.645v18.404H28V32zm-4.139-11.982a.88.88 0 00-1.292-.105c-.03.026-3.015 2.681-8.57 2.681-5.486 0-8.517-2.636-8.571-2.684a.88.88 0 00-1.29.107 1.01 1.01 0 00-.219.708.992.992 0 00.318.664c.142.128 3.537 3.15 9.762 3.15 6.226 0 9.621-3.022 9.763-3.15a.992.992 0 00.317-.664 1.01 1.01 0 00-.218-.707z"></path>
             </svg>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

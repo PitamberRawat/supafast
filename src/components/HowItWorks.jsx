@@ -42,7 +42,7 @@ const HowItWorks = () => {
             svg={two}
             heading="Request"
             flag={true}
-            para="Login and enter the link of the LinkedIn job posting that you want to find the hiring manager for."
+            para="Login and enter the link of the job posting that you want to find the hiring manager for."
           />
           {bool && (
             <img

@@ -11,7 +11,7 @@
   height: min-content;
   justify-content: flex-start;
   overflow: hidden;
-  padding: 160px 72px 0;
+  padding: 0px 72px 0;
   position: relative;
   width: 100%;
 }
@@ -82,7 +82,7 @@
   letter-spacing: 0.01em;
   color: rgba(249, 249, 249, 1);
 }
-.supafast-footer {
+.bossfinder-footer {
   border-bottom-width: 0px;
   border-color: #d4d4d4;
   border-left-width: 0px;
@@ -103,7 +103,7 @@
   width: 100%;
 }
 
-.supafast-para {
+.bossfinder-para {
   font-family: "Manrope", "Manrope Placeholder", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -170,7 +170,7 @@
   justify-content: center;
   max-width: 668px;
   overflow: visible;
-  padding: 0px 8px 0px 0px;
+  padding: 5px 0;
   position: relative;
   width: 668px;
 }
@@ -252,11 +252,12 @@
   height: min-content;
   justify-content: center;
   overflow: visible;
-  padding: 8px 16px;
+  padding: 8px 30px;
   position: relative;
   text-decoration: none;
-  width: 230px;
+  width: 280px;
   transition: transform 0.3s ease;
+  margin: 2px;
 }
 .contact-section:hover {
   cursor: pointer;
@@ -271,6 +272,7 @@
   color: white;
   transform: none;
   opacity: 1;
+  padding: 4px 13px;
 }
 .contact-pic {
   border-bottom-width: 1px;

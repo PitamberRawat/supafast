@@ -52,17 +52,21 @@ const Services = () => {
                 gap: "16px",
               }}
             >
+              {/* Don’t take our word for it, look at some of the email responses our users have received from Managers, Directors, VPs, CEOs, from some of the top companies in the world. */}
               <div className="service-heading-container">
-                <p className="service-text">Services</p>
+                <p className="service-text">Results</p>
               </div>
 
               <div>
-                <h3 className="head3">You name it, we</h3>
-                <h3 className="head3">ship it supafast.</h3>
+                <h3 className="head3">
+                  Don’t take our word for it, look at some of the email
+                  responses our users have received from Managers, Directors,
+                  VPs, CEOs, from some of the top companies in the world.
+                </h3>
               </div>
             </div>
 
-            <div className="development">
+            {/* <div className="development">
               <div className="development-container">
                 <Development devName="Copywriting" />
                 <Development devName="Branding" />
@@ -79,7 +83,7 @@ const Services = () => {
                 <Development devName="CMS" />
                 <Development devName="Framer/Webflow/React Development" />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
